@@ -20,9 +20,9 @@ def hello_world():
         abort(400, description="Missing value")
     if 'y' not in request.get_json():
         abort(400, description="Missing value")
-    if type(x) not int:
+    if not type(request.get_json()['x']) is int:
         abort(400, description="Value not an integer")
-    if type(y) not int:
+    if not type(request.get_json()['y']) is int:
         abort(400, description="Value not an integer")
     ops = {'addition': x + y, 
            'substraction': x - y,

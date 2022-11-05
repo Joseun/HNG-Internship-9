@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/', methods=['POST'])
 def hello_world():
-     if not request.get_json():
+    if not request.get_json():
         abort(400, description="Not a JSON")
 
     if 'operation_type' not in request.get_json():

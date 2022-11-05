@@ -10,7 +10,7 @@ def hello_world():
                    })
 
 @app.route('/', methods=['POST'])
-def hello_world():
+def post_world():
     if not request.get_json():
         abort(400, description="Not a JSON")
 

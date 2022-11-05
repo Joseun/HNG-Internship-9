@@ -30,7 +30,7 @@ def hello_world():
     data = request.get_json()
     x = data['x']
     y = data['y']
-    for k, v in ops:
+    for k, v in ops.items():
         if k = data['operation_type']:
             result = v
    

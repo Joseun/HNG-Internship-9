@@ -28,6 +28,8 @@ def hello_world():
            'substraction': x - y,
            'multiplication': x * y}
     data = request.get_json()
+    x = data['x']
+    y = data['y']
     for k, v in ops:
         if k = data['operation_type']:
             result = v

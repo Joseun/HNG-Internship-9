@@ -31,7 +31,7 @@ def hello_world():
     x = data['x']
     y = data['y']
     for k, v in ops.items():
-        if k = data['operation_type']:
+        if k == data['operation_type']:
             result = v
    
     return jsonify({"slackUsername": "Joseun",

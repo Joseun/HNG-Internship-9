@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, Response
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
@@ -34,7 +34,14 @@ def post_world():
         if k == data['operation_type']:
             result = v
    
-    return jsonify({"slackUsername": "Joseun",
+    r = {"slackUsername": "Joseun",
                     "operation_type": data['operation_type'],
                     "result": result
-                   })
+                   }
+    headers={'content-type':'application/json'}
+
+    response = make_response(jsonify(r), 200)
+
+    response.headers = headers
+
+    return response

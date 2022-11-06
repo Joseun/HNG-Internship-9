@@ -27,7 +27,7 @@ def post_world():
 #     ops = {'addition': x + y, 
 #            'substraction': x - y,
 #            'multiplication': x * y}
-     data = request.get_json()
+      data = request.get_json()
 #     x = data['x']
 #     y = data['y']
 #     for k, v in ops.items():
@@ -39,10 +39,10 @@ def post_world():
 #                      "result": result,
 #          "data": data
 #                     }
-    headers={'mimetype':'application/json'}
+      headers={'mimetype':'application/json'}
 
-    response = make_response(jsonify(data), 200)
+      response = make_response(jsonify(data), 200)
 
-    response.headers = headers
+      response.headers = headers
 
-    return response
+      return response

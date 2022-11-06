@@ -27,21 +27,21 @@ def post_world():
 #     ops = {'addition': x + y, 
 #            'substraction': x - y,
 #            'multiplication': x * y}
-    data = request.get_json()
+#     data = request.get_json()
 #     x = data['x']
 #     y = data['y']
 #     for k, v in ops.items():
 #         if k == data['operation_type']:
 #             result = v
    
-    r = {"slackUsername": "Joseun",
-                     "operation_type": data['operation_type'],
-                     "result": result,
-         "data": data
-                    }
+#     r = {"slackUsername": "Joseun",
+#                      "operation_type": data['operation_type'],
+#                      "result": result,
+#          "data": data
+#                     }
     headers={'mimetype':'application/json'}
 
-    response = make_response(jsonify(r), 200)
+    response = make_response(jsonify(4), 200)
 
     response.headers = headers
 

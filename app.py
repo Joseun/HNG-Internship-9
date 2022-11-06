@@ -40,7 +40,7 @@ def post_world():
            "operation_type": op,
            "result": result}
 
-     headers={'mimetype':'application/json'}
+     headers={'Content-Type':'application/json'}
 
      response = make_response(jsonify(r), 200)
 

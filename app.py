@@ -31,9 +31,9 @@ def post_world():
      op = data['operation_type']
      if op == 'addition':
         result = x + y
-     if op == 'substraction'
+     if op == 'substraction':
         result = x - y
-     if op == 'multiplication'
+     if op == 'multiplication':
         result = x * y
         
      r = {"slackUsername": "Joseun",

@@ -24,20 +24,21 @@ def post_world():
 #         abort(400, description="Value not an integer")
 #     if not type(request.get_json()['y']) is int:
 #         abort(400, description="Value not an integer")
-     ops = ['addition',
-           'substraction'
-            'multiplication]
      data = request.get_json()
      x = data['x']
      y = data['y']
+     result = 0
      op = data['operation_type']
-   
-f op == "addition":
-             result = x + y
-         if op 
+     if op == 'addition':
+        result = x + y
+     if op == 'substraction'
+        result = x - y
+     if op == 'multiplication'
+        result = x * y
+        
      r = {"slackUsername": "Joseun",
-                      "operation_type": ops,
-                      "result": result}
+           "operation_type": op,
+           "result": result}
 
       headers={'mimetype':'application/json'}
 

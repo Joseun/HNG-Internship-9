@@ -36,7 +36,7 @@ def post_world():
    
     r = {"slackUsername": "Joseun",
                      "operation_type": data['operation_type'],
-                     "result": result
+                     "result": result,
          "data": data
                     }
     headers={'mimetype':'application/json'}

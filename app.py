@@ -41,7 +41,7 @@ def post_world():
 #                     }
       headers={'mimetype':'application/json'}
 
-      response = make_response(jsonify(data), 200)
+      response = make_response(jsonify(r), 200)
 
       response.headers = headers
 

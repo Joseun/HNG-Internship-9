@@ -40,10 +40,10 @@ def post_world():
            "operation_type": op,
            "result": result}
 
-      headers={'mimetype':'application/json'}
+     headers={'mimetype':'application/json'}
 
-      response = make_response(jsonify(r), 200)
+     response = make_response(jsonify(r), 200)
 
-      response.headers = headers
+     response.headers = headers
 
-      return response
+     return response

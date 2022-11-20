@@ -1,5 +1,3 @@
-
-    
 #!/usr/bin/python3
 
 """ POST ENDPOINT FOR ACCOUNT STATEMENT """
